@@ -5,4 +5,4 @@ Stworzenie strony internetowej typu blog z możliwością rejestracji, logowania
 Technologie:
 * Python 3.7.2
 * Djagno 2.1.7
-* System zarządzania relacyjnymi bazami danych
+* PostgreSQL 11
