@@ -15,9 +15,9 @@
 </head>
 <body>
 	<header class="site-header">
-		<nav class="navbar navbar-expand-md navbar-dark bg-primary fixed-top">
-			<div class="container">
-				<a class="navbar-brand mr-4" href="{% url 'blog-main' %}">Django Blog</a>
+		<nav class="navbar navbar-expand-md navbar-dark bg-primary fixed-top" style="background:transparent url('https://mdbootstrap.com/img/Photos/Others/img%20%2848%29.jpg') no-repeat center center /cover">
+			<div class="container" >
+				<a class="navbar-brand mr-4" href="{% url 'blog-main' %}">Endangered Animals</a>
 				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggle" aria-controls="navbarToggle" aria-expanded="false" aria-label="Toggle navigation">
 					<span class="navbar-toggler-icon"></span>
 				</button>
@@ -26,6 +26,7 @@
 						<a class="nav-item nav-link" href="{% url 'blog-main' %}" data-text="Home">Home</a>
 						<a class="nav-item nav-link" href="{% url 'blog-about' %}" data-text="About">About</a>
 						{% if user.is_authenticated %}
+							<a class="nav-item nav-link" href="{% url 'news-create' %}">New Post</a>
 							<a class="nav-item nav-link" href="{% url 'profile' %}">Profile</a>
 							<a class="nav-item nav-link" href="{% url 'logout' %}">Logout</a>
 						{% else %}
